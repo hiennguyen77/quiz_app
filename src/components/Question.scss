@@ -1,0 +1,116 @@
+.question_wrap {
+  user-select: none;
+  background-color: #051616;
+  margin: 0.5rem 20%;
+  border-radius: 8px;
+  height: auto;
+  //   overflow: hidden;
+  padding: 0 2rem;
+  .question_container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    .question_number {
+      // margin: 1rem 0 1rem 0;
+      color: #00eeff;
+      font-size: 4rem;
+      span {
+        display: inline-block;
+        font-size: 2rem;
+      }
+    }
+
+    .question {
+      width: 100%;
+      margin-bottom: 4rem;
+
+      h4 {
+        font-size: 1.6rem;
+        color: #fff;
+        font-weight: 300;
+        margin-bottom: 1rem;
+      }
+
+      .answer {
+        border: 1px solid #00eeff;
+        width: 50%;
+        padding: 1rem 1rem;
+        border-radius: 8rem;
+        background-color: transparent;
+        margin: 1rem 1rem;
+        height: 6rem;
+
+        p {
+          font-size: 1.6rem;
+          color: #fff;
+        }
+      }
+
+      // .disableAnswer {
+      //   border: 1px solid #00eeff;
+      //   width: 50%;
+      //   padding: 1rem 1rem;
+      //   border-radius: 8rem;
+      //   background-color: transparent;
+      //   margin: 1rem 1rem;
+      //   height: 6rem;
+      //   pointer-events: none;
+
+      //   p {
+      //     font-size: 1.6rem;
+      //     color: #fff;
+      //   }
+      // }
+
+      .answer:hover {
+        cursor: pointer;
+        background-color: #00eeff;
+        p {
+          color: #333;
+        }
+      }
+    }
+  }
+
+  .question_btn {
+    .prev,
+    .next {
+      width: 20rem;
+      padding: 1rem 1rem;
+      margin: 1rem 1rem;
+      border: 1px solid #00eeff;
+      border-radius: 8rem;
+      background-color: #00eeff;
+      p {
+        font-size: 2.5rem;
+        color: #333;
+      }
+    }
+    button:hover {
+      cursor: pointer;
+      background-color: transparent;
+      p {
+        color: #fff;
+      }
+    }
+
+    .disable {
+      width: 20rem;
+      padding: 1rem 1rem;
+      margin: 1rem 1rem;
+      border: 1px solid #838383;
+      border-radius: 8rem;
+      background-color: #838383;
+      pointer-events: none;
+      user-select: none;
+
+      p {
+        font-size: 2.5rem;
+        color: #ffffff;
+      }
+    }
+  }
+}
